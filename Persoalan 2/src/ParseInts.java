@@ -20,10 +20,10 @@ public class ParseInts
             try {
                 val = Integer.parseInt(scanLine.next());
                 sum += val;
-            } catch (Exception e) {
+            } catch (NumberFormatException ex) {
                 //empty body
             }
-        }
+        }   
         System.out.println("The sum of the integers on this line is " + sum);
     }
 }
