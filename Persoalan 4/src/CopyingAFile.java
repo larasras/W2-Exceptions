@@ -3,8 +3,6 @@
 //
 // A program that prompts the user for a filename, 
 // opens a Scanner to the file and copies it, to standard output.
-// If the user enters the name of a file that does not exist,
-// ask for another name until get one that refers to a valid file.
 // ****************************************************************
 import java.util.Scanner;
 import java.io.File;
@@ -17,6 +15,7 @@ public class CopyingAFile {
         String fileName;
         File file;
 
+        //if the file does not exist, ask for another file name
         while (!exist){
             System.out.println("Input the file name with directory: ");
             fileName = scan.nextLine();
