@@ -1,1 +1,6 @@
-Hai
+The program that prompts the user for a filename,
+then opens a Scanner to the file and copies it,
+a line at a time, to the standard output.
+
+If the user enters the name of a file that does not exist,
+ask for another name until you get one that refers to a valid file.

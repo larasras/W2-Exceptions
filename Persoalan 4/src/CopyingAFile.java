@@ -17,7 +17,7 @@ public class CopyingAFile {
 
         //if the file does not exist, ask for another file name
         while (!exist){
-            System.out.println("Input the file name with directory: ");
+            System.out.println("Input the file name with directory address: ");
             fileName = scan.nextLine();
             file = new File(fileName);
             try {
