@@ -3,7 +3,6 @@
 //
 // Reads a words from the standard input and prints the number of
 // occurrences of each letter in that word.
-
 // ****************************************************************
 import java.util.Scanner;
 
@@ -17,14 +16,17 @@ public class CountLetters
         //get word from user
         System.out.print("Enter a single word (letters only, please): ");
         String word = scan.nextLine();
-
         //convert to all upper case
         word = word.toUpperCase();
-
         //count frequency of each letter in string
         for (int i=0; i < word.length(); i++)
-            counts[word.charAt(i)-'A']++;
-            
+        {
+            try {
+				counts[word.charAt(i)-'A']++;			
+			} catch (ArrayIndexOutOfBoundsException ex) {
+				System.err.println("Not a letter: \"" + word.charAt(i) + "\"");
+			}
+        }  
         //print frequencies
         System.out.println();
         for (int i=0; i < counts.length; i++)
