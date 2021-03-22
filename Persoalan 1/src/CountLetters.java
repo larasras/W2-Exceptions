@@ -22,10 +22,10 @@ public class CountLetters
         for (int i=0; i < word.length(); i++)
         {
             try {
-				counts[word.charAt(i)-'A']++;			
-			} catch (ArrayIndexOutOfBoundsException ex) {
-				System.err.println("Not a letter: \"" + word.charAt(i) + "\"");
-			}
+		counts[word.charAt(i)-'A']++;			
+	    } catch (ArrayIndexOutOfBoundsException ex) {
+		    System.err.println("Not a letter: \"" + word.charAt(i) + "\"");
+	    }
         }  
         //print frequencies
         System.out.println();
