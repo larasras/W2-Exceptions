@@ -53,6 +53,7 @@ public class RatePanel extends JPanel
         add (selectedCurrency);
         add (result);
         add (costTextField);
+        setBackground (Color.CYAN);
     }
     // ******************************************************
     // Represents an action listener for the combo box.
