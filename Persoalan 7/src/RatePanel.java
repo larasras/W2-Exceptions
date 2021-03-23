@@ -25,9 +25,10 @@ public class RatePanel extends JPanel
     // ------------------------------------------------------------
     public RatePanel ()
     {
+        setPreferredSize(new Dimension(500, 150));
         JLabel title = new JLabel ("How much is that in dollars?");
         title.setAlignmentX (Component.CENTER_ALIGNMENT);
-        title.setFont (new Font ("Helvetica", Font.BOLD, 20));
+        title.setFont (new Font ("Helvetica Neue", Font.BOLD, 20));
 
         // Set up the arrays for the currency conversions
         currencyName = new String[] {"Select the currency..",
@@ -42,10 +43,10 @@ public class RatePanel extends JPanel
         selectedCurrency = new JComboBox(currencyName);
         selectedCurrency.setAlignmentX(CENTER_ALIGNMENT);
 
-        costTextField = new JTextField(20);
+        costTextField = new JTextField(15);
         costTextField.addActionListener(new ComboListener());
 
-        result = new JLabel (" ------------ ");
+        result = new JLabel ("===Result===");
         result.setAlignmentX(Component.CENTER_ALIGNMENT);
 
         add (title);
