@@ -39,7 +39,7 @@ public class PrimePanel extends JPanel
         add (computeButton);
         // add (primeList);
         add (scrollPane);
-        setPreferredSize (new Dimension (600, 320));
+        setPreferredSize (new Dimension (400, 320));
         setBackground (Color.yellow);
         scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
     }
