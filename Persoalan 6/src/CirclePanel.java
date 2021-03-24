@@ -88,8 +88,6 @@ public class CirclePanel extends JPanel
         //---------------------------------------------------------------
         public MoveListener(int dx, int dy)
         {
-            System.out.println("x = " + x);
-            System.out.println("y = " + y);
             this.dx = dx;
             this.dy = dy;
         }
@@ -126,6 +124,8 @@ public class CirclePanel extends JPanel
             } else {
                 down.setEnabled(true);
             }
+            System.out.println("x = " + x);
+            System.out.println("y = " + y);
         }
     }
 }
